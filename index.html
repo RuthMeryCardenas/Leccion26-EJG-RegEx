@@ -10,7 +10,7 @@
   <div id="main-container" class="main-container">
     <form id="form-1" class="">
       <label for="name">Nombre:</label>
-      <input id="name" type="text" required pattern="[A-Z]{1}[a-z]+" title="La primera letra debe ser mayúscula">
+      <input id="name" type="text" required pattern="[A-Z][a-z]+" title="La primera letra debe ser mayúscula">
       <br>
       <br>
       <label for="lastName">Apellido:</label>
@@ -21,16 +21,24 @@
       <input id="dni" type="text" required pattern="[0-9]{8}" title="Debe tener 8 dígitos">
       <br>
       <br>
+      <label for="birthDate">F.Nacimiento:</label>
+      <input id="birthDate" type="text" required>
+      <br>
+      <br>
       <label for="mobile-phone">T.Celular:</label>
       <input id="mobile-phone" type="text" required pattern="9[0-9]{8}" title="Debe empezar con 9 y tener 9 dígitos">
       <br>
       <br>
       <label for="home-phone">T.Fijo:</label>
       <input id="home-phone" type="text" required pattern="[0-9]{7}" title="7 dígitos">
-      <!-- <label for="birthDate">F.Nacimiento:</label>
-      <input id="birthDate" type="date" required> -->
-      <!-- <label for=""></label>
-      <input id="" ype="text"> -->
+      <br>
+      <br>
+      <label for="password">Contraseña:</label>
+      <input id="password" type="password" required>
+      <br>
+      <br>
+      <label for="confirm-password">Confirmar contraseña:</label>
+      <input id="confirm-password" type="password" required>
       <br>
       <br>
       <button type="submit" name="button">Enviar</button>
