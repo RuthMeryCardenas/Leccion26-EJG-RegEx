@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Validaciones con RexGex</title>
+</head>
+<body>
+  <div id="main-container" class="main-container">
+    <form id="form-1" class="">
+      <label for="name">Nombre:</label>
+      <input id="name" type="text" required pattern="[A-Z]{1}[a-z]+" title="La primera letra debe ser mayúscula">
+      <br>
+      <br>
+      <label for="lastName">Apellido:</label>
+      <input id="lastName" type="text" required pattern="[A-Z][a-z]+" title="La primera letra debe ser mayúscula">
+      <br>
+      <br>
+      <label for="dni">DNI:</label>
+      <input id="dni" type="text" required pattern="[0-9]{8}" title="Debe tener 8 dígitos">
+      <br>
+      <br>
+      <label for="mobile-phone">T.Celular:</label>
+      <input id="mobile-phone" type="text" required pattern="9[0-9]{8}" title="Debe empezar con 9 y tener 9 dígitos">
+      <br>
+      <br>
+      <label for="home-phone">T.Fijo:</label>
+      <input id="home-phone" type="text" required pattern="[0-9]{7}" title="7 dígitos">
+      <!-- <label for="birthDate">F.Nacimiento:</label>
+      <input id="birthDate" type="date" required> -->
+      <!-- <label for=""></label>
+      <input id="" ype="text"> -->
+      <br>
+      <br>
+      <button type="submit" name="button">Enviar</button>
+    </form>
+  </div>
+</body>
+</html>
